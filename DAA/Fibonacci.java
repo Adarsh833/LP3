@@ -1,11 +1,9 @@
 import java.util.Scanner;
 
 public class Fibonacci {
-    private static int stepCount = 0; // To track the number of steps
-
-    // Recursive method to calculate Fibonacci with step count
+    private static int stepCount = 0; 
     public static int fibonacci(int n) {
-        stepCount++; // Increment step count each time the method is called
+        stepCount++; 
 
         if (n <= 1) {
             return n;
@@ -17,9 +15,9 @@ public class Fibonacci {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Enter the position of the Fibonacci number to calculate: ");
-        int n = scanner.nextInt(); // User input for Fibonacci position
+        int n = scanner.nextInt(); 
         
-        stepCount = 0; // Reset step count
+        stepCount = 0; 
 
         int result = fibonacci(n);
         System.out.println("Fibonacci number at position " + n + " is: " + result);
